@@ -21,7 +21,7 @@
     ---Stylesheet---
     --------------->
     <style>
-        input::placeholder {
+        .nav-search::placeholder {
             text-align: right;
         }
     </style>
@@ -37,7 +37,7 @@
         ---navbar---
         ----------->
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light mt-3">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="/images/logo.png" alt="""
@@ -54,21 +54,21 @@
                         ---Search---
                         ----------->
                         <form class="d-flex ms-auto">
-                            <input class="form-control me-2 rounded-pill fa" type="search" placeholder="&#xf002"
-                                aria-label="Search" style="width: 400px;">
+                            <input class="form-control me-2 rounded-pill fa nav-search" type="search"
+                                placeholder="&#xf002" aria-label="Search" style="width: 400px;">
                         </form>
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Product</a>
+                                <a class="nav-link" href="#shoes">Shoes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
+                                <a class="nav-link" href="#backpack">Backpack</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
+                                <a class="nav-link" href="#subscribe">Subscribe</a>
                             </li>
                         </ul>
                     </div>
@@ -171,7 +171,7 @@
         <!--------- 
         ---shoes---
         ---------->
-        <section class="container">
+        <section class="container my-5" id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -219,7 +219,7 @@
         <!------------ 
         ---Backpack---
         ------------->
-        <section class="container mt-5">
+        <section class="container my-5" id="backpack">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -263,7 +263,30 @@
                 </div>
             </div>
         </section>
+
+        <!-------------
+        ---Subscribe---
+        -------------->
+
+        <section style="height: 300px;"
+            class="container d-flex justify-content-center bg-info align-items-center rounded-3" id="subscribe">
+            <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <p>Get updates on sales, specials and more</p>
+                <input type="text" placeholder="Your Email">
+                <br>
+                <button class="btn-warning">SUBMIT</button>
+            </div>
+        </section>
     </main>
+
+    <!----------
+    ---Footer---
+    ----------->
+
+    <footer class="mt-5 text-center">
+        <p><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+    </footer>
 
     <!--------------------
     ---Bootstrap Script---
