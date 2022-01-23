@@ -1,0 +1,30 @@
+.nav-search::placeholder {
+    text-align: right;
+}
+
+.panda-bg-info {
+    background-color: #fceae8;
+}
+
+.categories img {
+    width: 100px;
+}
+
+#watch{
+    background-color: #faa630;
+}
+
+#bag {
+    background-color: #da70d6;
+}
+
+#shoe {
+    background-color: #3468fa;
+}
+
+.panda-buy-now-btn {
+    background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
+    border-radius: 8px;
+    padding: 9px 25px;
+    border: 0px;
+}
